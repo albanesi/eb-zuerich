@@ -1,15 +1,48 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int drinkingAgeInAmerica=21;
 
-        int yourAge=17;
 
-        // we want to check if my age is bigger then the drinking age in america
-        if(drinkingAgeInAmerica>yourAge){
-            System.out.println("You can't drink");
-        }else{
-            System.out.println("You are allowed to drink");
-        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String userName = scanner.nextLine();
+        System.out.print("Last name: ");
+        String userLastName = scanner.nextLine();
+        System.out.print("Age: ");
+        int age = scanner.nextInt();
+        System.out.print("Your Name is "+userName+
+                " "+ userLastName+" and you are "+ age+ " years old" );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }
