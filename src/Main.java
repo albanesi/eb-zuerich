@@ -1,15 +1,28 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int drinkingAgeInAmerica=21;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Gib mir die erste Zahl");
+        int firstNumber = scanner.nextInt();
+        System.out.print("Gib mir die zweite Zahl");
+        int secondNumber = scanner.nextInt();
+        System.out.println("Was willst du machen");
+        System.out.println("Mögliche Eingabemöglichkeiten sind");
+        System.out.println("[multiplizieren], [dividieren], [addieren], [subtrahieren]");
+        String action = scanner.nextLine();
 
-        int yourAge=17;
-
-        // we want to check if my age is bigger then the drinking age in america
-        if(drinkingAgeInAmerica>yourAge){
-            System.out.println("You can't drink");
+        if (action.equals("multiplizieren")){
+            System.out.println("Das resultat ist"+ firstNumber*secondNumber);
+        }else if (action.equals("dividieren")){
+            System.out.println("Das resultat ist"+ firstNumber/secondNumber);
+        }else if (action.equals("addieren")){
+            System.out.println("Das resultat ist"+ firstNumber/secondNumber);
+        }else if(action.equals("subtrahieren")){
+            System.out.println("Das resultat ist"+ (firstNumber-secondNumber));
         }else{
-            System.out.println("You are allowed to drink");
+            System.out.println("Etwas ist schiefgegangen");
         }
     }
 }
